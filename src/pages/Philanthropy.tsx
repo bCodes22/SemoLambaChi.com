@@ -178,7 +178,7 @@ const Philanthropy = () => {
               a long-standing tradition filled with great food, fellowship, and the unmatched energy of brotherhood.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                ''ChopsGiving gives our chapter a chance to come together, reflect, and strengthen the bond that defines Lambda Chi Alpha. Whether it’s sharing stories, 
+                ChopsGiving gives our chapter a chance to come together, reflect, and strengthen the bond that defines Lambda Chi Alpha. Whether it’s sharing stories, 
                 laughing over plates of comfort food, or catching rolls across the table, this tradition reminds us of what it means to be part of something bigger than ourselves.
               </p>
             </div>
