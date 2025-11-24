@@ -161,59 +161,59 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               {
-                name: "Cole Douglas",
-                position: "Chapter President",
-                image: ColeImage  //image is imported here
+                name: "",
+                position: "President",
+                image: ""  //image is imported here
               },
               {
-                name: "Layne Collier",
+                name: "",
                 position: "VP of Internal Affairs",
-                image: LayneImage
+                image: ""
               },
               {
-                name: "Oliver Romero",
+                name: "",
                 position: "VP of External Affairs",
-                image: OliImage
+                image: ""
               },
               {
-                name: "Zavior Mize",
+                name: "",
                 position: "Secretary",
-                image: ZaviorImage
+                image: ""
               },
               {
-                name: "Lucas Lenear",
+                name: "",
                 position: "Treasurer",
                 image: ""
               },
               {
-                name: "Grant Hoffman",
+                name: "",
                 position: "Risk Management",
-                image: GrantImage
+                image: ""
               },
               {
-                name: "Andrew Keane",
+                name: "",
                 position: "Recruitment Chair",
-                image: HbImage
+                image: ""
               },
               {
-                name: "Marcus Sullenger",
+                name: "",
                 position: "Educator",
                 image: ""
               },
               {
-                name: "Clayton Waldeck",
+                name: "",
                 position: "Academic Affairs",
-                image: ClaytonImage
+                image: ""
               },
               {
-                name: "James Antoni",
+                name: "",
                 position: "Alumni Relations",
-                image: JamesImage
+                image: ""
               },
               {
-                name: "Nathan Mccarthy",
+                name: "",
                 position: "Social Relations",
-                image: BigNate
+                image: ""
               }
             ].map((leader) => (
               <div key={leader.name} className="text-center group">
