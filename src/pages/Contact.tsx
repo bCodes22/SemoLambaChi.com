@@ -1,0 +1,149 @@
+import BackgroundImage from '../Lambda/Background.jpg';
+import { Facebook, Instagram } from 'lucide-react';
+
+const Contact = () => {
+  return (
+    <div className="flex flex-col">
+      {/* Hero Section with Background Image */}
+      <section className="py-24 relative overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(${BackgroundImage})`
+          }}
+        >
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-6xl font-light text-white mb-8 leading-tight drop-shadow-lg">
+            Contact Us
+          </h1>
+          <p className="text-xl text-white/90 leading-relaxed max-w-3xl mx-auto drop-shadow-md">
+            Get in touch with Lambda Chi Alpha at Southeast Missouri State University. 
+            We're here to answer your questions and help you learn more about our brotherhood.
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Form and Info */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div>
+              <h2 className="text-3xl font-light text-gray-900 mb-8">Send Us a Message</h2>
+              <form className="space-y-6">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-gray-900 bg-transparent"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-gray-900 bg-transparent"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-gray-900 bg-transparent"
+                  />
+                </div>
+                <div>
+                  <textarea
+                    rows={6}
+                    placeholder="Message"
+                    className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-gray-900 bg-transparent resize-none"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-gray-900 text-white py-3 hover:bg-gray-800 transition-colors duration-300"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <div>
+              <h2 className="text-3xl font-light text-gray-900 mb-8">Get In Touch</h2>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">Location</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Southeast Missouri State University<br />
+                    Cape Girardeau, MO 63701
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">Email</h3>
+                  <p className="text-gray-600">lambdachirushchair@gmail.com</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">Phone</h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">Fraternity and Sorority Life Office Hours</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Monday - Friday: 9:00 AM - 4:00 PM<br />
+                    Saturday - Sunday: Closed
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">Social Media</h3>
+                  <div className="flex space-x-4 mt-2">
+                    <a
+                      href="https://www.facebook.com/semolambdachi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                      className="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 rounded-full"
+                    >
+                      <Facebook className="h-5 w-5 text-white" />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/semolambdachi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                      className="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 rounded-full"
+                    >
+                      <Instagram className="h-5 w-5 text-white" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Info */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-light text-gray-900 mb-8">Interested in Joining?</h2>
+          <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">
+            If you're interested in learning more about Lambda Chi Alpha and potentially 
+            joining our brotherhood, we'd love to hear from you. Reach out to us and 
+            we'll be happy to answer any questions you may have.
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            We welcome men who are committed to excellence, leadership, and making 
+            a positive impact in their community.
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Contact;
