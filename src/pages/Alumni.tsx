@@ -74,10 +74,10 @@ const Alumni = () => {
             {[
               {
                 name: "Harry S. Truman",
-                year: "Initiated in 1945",
+                year: "1945",
                 position: "33rd President of the United States",
                 image: HarryS,
-                quote: ""
+                quote: "Harry S. Truman was an honorary member of Lambda Chi Alpha, initiated in June 1945 by the Kansas City alumni association of the University of Missouri's chapter. At the time, he was the President of the United States"
               }
             ].map((alumni) => (
               <div key={alumni.name} className="text-center group">
