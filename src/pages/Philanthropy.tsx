@@ -174,10 +174,12 @@ const Philanthropy = () => {
               </div>
               <h3 className="text-2xl font-light text-gray-900 mb-4">Chops Giving</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                '''''
+              Each year, the brothers of Lambda Chi Alpha gather at Lambert’s Café for our annual ChopsGiving celebration, 
+              a long-standing tradition filled with great food, fellowship, and the unmatched energy of brotherhood.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                '''
+                ''ChopsGiving gives our chapter a chance to come together, reflect, and strengthen the bond that defines Lambda Chi Alpha. Whether it’s sharing stories, 
+                laughing over plates of comfort food, or catching rolls across the table, this tradition reminds us of what it means to be part of something bigger than ourselves.
               </p>
             </div>
           </div>
