@@ -105,8 +105,13 @@ const About = () => {
               <p className="text-gray-600 leading-relaxed mb-8">
                 Living with integrity and upholding the highest ethical standards.
               </p>
+
+              <h3 className="text-xl font-medium text-gray-900 mb-4">Integrity</h3>
+              <p className="text-gray-600 leading-relaxed mb-8">
+                ''.
+              </p>
               
-              <h3 className="text-xl font-medium text-gray-900 mb-4">Courage</h3>
+              <h3 className="text-xl font-medium text-gray-900 mb-4">PersonalCourage</h3>
               <p className="text-gray-600 leading-relaxed">
                 Standing up for what is right and facing challenges with determination.
               </p>
