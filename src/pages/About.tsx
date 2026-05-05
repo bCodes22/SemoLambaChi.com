@@ -96,7 +96,7 @@ const About = () => {
               </p>
             </div>
             <div className="text-left">
-              <h3 className="text-xl font-medium text-gray-900 mb-4">Service</h3>
+              <h3 className="text-xl font-medium text-gray-900 mb-4">Service & Stewardship</h3>
               <p className="text-gray-600 leading-relaxed mb-8">
                 Dedicating ourselves to serving others and making a positive impact.
               </p>
