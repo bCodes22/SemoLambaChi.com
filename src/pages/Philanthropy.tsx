@@ -153,16 +153,19 @@ const Philanthropy = () => {
                 href="https://www.instagram.com/p/DORqu0xEkcw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View recent Watermelon Bust photos on Instagram"
-                className="block"
+                className="group/image block relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 mb-6 cursor-pointer"
               >
-                <div className="relative overflow-hidden rounded-lg shadow-md group-hover:shadow-lg transition-all duration-300 mb-6 cursor-pointer">
-                  <img
-                    src={WatermelonBustImage}
-                    alt="Watermelon Bust fundraising event"
-                    className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                <img
+                  src={WatermelonBustImage}
+                  alt="Watermelon Bust fundraising event"
+                  className="w-full h-80 object-cover group-hover/image:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent transition-opacity duration-300 group-hover/image:from-black/80"></div>
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 backdrop-blur-sm border border-white/30 shadow-lg">
+                  <span className="text-white text-sm font-medium tracking-wide whitespace-nowrap">
+                    View recent photos on Instagram
+                  </span>
+                  <ExternalLink className="w-4 h-4 text-white/90 group-hover/image:translate-x-0.5 group-hover/image:-translate-y-0.5 transition-transform duration-300" />
                 </div>
               </a>
               <h3 className="text-2xl font-light text-gray-900 mb-4">Watermelon Bust</h3>
@@ -170,9 +173,6 @@ const Philanthropy = () => {
               For many years, our chapter hosted the Watermelon Bust and Watermelon Bash as our main fall fundraising events. 
               These fun, community-centered traditions helped raise thousands of dollars for Feeding America, supporting families in need and helping fight hunger nationwide. 
               Through these events, we saw how brotherhood and campus spirit could come together to make a real impact.
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Check out recent Watermelon Bust pictures by clicking on the image above!
               </p>
             </div>
             <div className="group">
