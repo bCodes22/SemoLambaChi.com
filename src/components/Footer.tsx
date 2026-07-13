@@ -50,7 +50,7 @@ const Footer = () => {
             <h3 className="text-lg font-medium mb-6 text-white">Contact Info</h3>
             <div className="space-y-3 text-gray-300">
               <p>Cape Girardeau, MO 63701</p>
-              <p>Email: lambdachirushchair@gmail.com</p>
+              <p>Email: lambdachideltaphi@gmail.com</p>
               <p>Phone: </p>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
               {[
                 { icon: Facebook, href: "https://www.facebook.com/semolambdachi", label: "Facebook" },
                 { icon: Instagram, href: "https://www.instagram.com/semolambdachi", label: "Instagram" },
-                { icon: Mail, href: "mailto:lambdachirushchair@gmail.com", label: "Email" }
+                { icon: Mail, href: "mailto:lambdachideltaphi@gmail.com", label: "Email" }
               ].map((social) => (
                 <a
                   key={social.label}
