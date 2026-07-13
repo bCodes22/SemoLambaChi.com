@@ -51,7 +51,7 @@ const Footer = () => {
             <div className="space-y-3 text-gray-300">
               <p>Cape Girardeau, MO 63701</p>
               <p>Email: lambdachideltaphi@gmail.com</p>
-              <p>Phone: </p>
+              <p>Phone: (314) 680-6470</p>
             </div>
           </div>
 

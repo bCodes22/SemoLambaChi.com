@@ -89,7 +89,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-medium text-gray-900 mb-2">Phone</h3>
-                  <p className="text-gray-600"></p>
+                  <p className="text-gray-600">(314) 680-6470</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-medium text-gray-900 mb-2">Fraternity and Sorority Life Office Hours</h3>
