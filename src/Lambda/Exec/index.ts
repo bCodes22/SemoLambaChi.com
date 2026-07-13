@@ -1,10 +1,10 @@
-import PresidentImage from './President.jpg';
-import InternalVPImage from './Internal_VP.jpg';
-import ExternalVPImage from './External_VP.jpg';
-import RecruitmentChairImage from './Recruitment_Chair.jpg';
-import RitualistImage from './Ritualist.jpg';
-import AcademicAffairsImage from './Academic_Affairs.jpg';
-import SocialRelationsImage from './Social_Relaitions.jpg';
+import PresidentImage from './President.jpeg';
+import InternalVPImage from './Internal_VP.jpeg';
+import ExternalVPImage from './External_VP.jpeg';
+import RushChairImage from './Rush_Chair.jpeg';
+import RitualistImage from './Ritualist.jpeg';
+import AcademicAffairsImage from './Academic_Affairs.jpeg';
+import SocialRelationsImage from './Social_Relations.jpeg';
 import SecretaryImage from './Secretary.jpeg';
 import TreasurerImage from './Treasurer.jpeg';
 import RiskManagementImage from './Risk_Management.jpeg';
@@ -50,7 +50,7 @@ export const executiveBoard: ExecMember[] = [
   {
     name: '',
     position: 'Recruitment Chair',
-    image: RecruitmentChairImage,
+    image: RushChairImage,
   },
   {
     name: '',
