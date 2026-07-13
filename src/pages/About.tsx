@@ -78,43 +78,17 @@ const About = () => {
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-light text-gray-900 mb-16">Our Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="text-left">
-              <h3 className="text-xl font-medium text-gray-900 mb-4">Loyalty</h3>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Unwavering commitment to our brotherhood, our values, and our shared mission.
-              </p>
-              
-              <h3 className="text-xl font-medium text-gray-900 mb-4">Duty</h3>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Fulfilling our obligations to our fraternity, our university, and our community.
-              </p>
-              
-              <h3 className="text-xl font-medium text-gray-900 mb-4">Respect</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Treating all individuals with dignity and honoring the diversity of our brotherhood.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="text-left space-y-8">
+              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Loyalty</h3>
+              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Duty</h3>
+              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Respect</h3>
             </div>
-            <div className="text-left">
-              <h3 className="text-xl font-medium text-gray-900 mb-4">Service & Stewardship</h3>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Dedicating ourselves to serving others and making a positive impact.
-              </p>
-              
-              <h3 className="text-xl font-medium text-gray-900 mb-4">Honor</h3>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Living with integrity and upholding the highest ethical standards.
-              </p>
-
-              <h3 className="text-xl font-medium text-gray-900 mb-4">Integrity</h3>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                ''.
-              </p>
-              
-              <h3 className="text-xl font-medium text-gray-900 mb-4">PersonalCourage</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Standing up for what is right and facing challenges with determination.
-              </p>
+            <div className="text-left space-y-8">
+              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Service & Stewardship</h3>
+              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Honor</h3>
+              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Integrity</h3>
+              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Personal Courage</h3>
             </div>
           </div>
         </div>
