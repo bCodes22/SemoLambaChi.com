@@ -1,18 +1,7 @@
 import BackgroundImage from '../Lambda/Background.jpg';
-
-import ColeImage from '../Lambda/Cole.jpg';
-import LayneImage from '../Lambda/Layne.jpg';
-import OliImage from '../Lambda/Oliver.jpg';
-import ZaviorImage from '../Lambda/Zavior.jpg';
-
-import GrantImage from '../Lambda/Grant.jpg';
-import HbImage from '../Lambda/HB.jpg';
-
-import ClaytonImage from '../Lambda/Claydiddy.jpg';
-import JamesImage from '../Lambda/James.jpg';
-import BigNate from '../Lambda/Nate.jpg';
 import LXACOA from '../Lambda/LXACOA.svg';
 import HistoryImage from '../Lambda/History.jpeg';
+import { executiveBoard } from '../Lambda/Exec';
 
 const About = () => {
   return (
@@ -138,64 +127,8 @@ const About = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {[
-              {
-                name: "",
-                position: "President",
-                image: ""  //image is imported here
-              },
-              {
-                name: "",
-                position: "VP of Internal Affairs",
-                image: ""
-              },
-              {
-                name: "",
-                position: "VP of External Affairs",
-                image: ""
-              },
-              {
-                name: "",
-                position: "Secretary",
-                image: ""
-              },
-              {
-                name: "",
-                position: "Treasurer",
-                image: ""
-              },
-              {
-                name: "",
-                position: "Risk Management",
-                image: ""
-              },
-              {
-                name: "",
-                position: "Recruitment Chair",
-                image: ""
-              },
-              {
-                name: "",
-                position: "Educator",
-                image: ""
-              },
-              {
-                name: "",
-                position: "Academic Affairs",
-                image: ""
-              },
-              {
-                name: "",
-                position: "Alumni Relations",
-                image: ""
-              },
-              {
-                name: "",
-                position: "Social Relations",
-                image: ""
-              }
-            ].map((leader) => (
-              <div key={leader.name} className="text-center group">
+            {executiveBoard.map((leader) => (
+              <div key={leader.position} className="text-center group">
                 <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 mb-6 mx-auto w-48 h-48">
                   {leader.image ? (
                     <>
