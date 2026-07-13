@@ -3,7 +3,7 @@ import PresidentImage from '../Lambda/Exec/President.jpg';
 import TreasurerImage from '../Lambda/Exec/Treasurer.jpg';
 import InternalVPImage from '../Lambda/Exec/Internal_VP.jpg';
 import RushChairImage from '../Lambda/Exec/Rush_Chair.jpg';
-import { Facebook, Instagram, Mail } from 'lucide-react';
+import { Facebook, Instagram, Mail, MapPin, Phone, Clock } from 'lucide-react';
 
 const officers = [
   { name: 'Grant Hoffman', position: 'President', email: 'gchoffman2s@semo.edu', image: PresidentImage },
@@ -77,53 +77,72 @@ const Contact = () => {
 
       {/* Contact Info */}
       <section className="py-24 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-light text-gray-900 mb-8 text-center">Get In Touch</h2>
-          <div className="space-y-8">
-            <div>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-light text-gray-900 mb-8">Get In Touch</h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white rounded-xl shadow-md p-8 text-center">
+              <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-xl font-medium text-gray-900 mb-2">Location</h3>
               <p className="text-gray-600 leading-relaxed">
                 Southeast Missouri State University<br />
                 Cape Girardeau, MO 63701
               </p>
             </div>
-            <div>
+
+            <div className="bg-white rounded-xl shadow-md p-8 text-center">
+              <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Mail className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-xl font-medium text-gray-900 mb-2">Email</h3>
               <p className="text-gray-600">lambdachirushchair@gmail.com</p>
             </div>
-            <div>
+
+            <div className="bg-white rounded-xl shadow-md p-8 text-center">
+              <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Phone className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-xl font-medium text-gray-900 mb-2">Phone</h3>
               <p className="text-gray-600">(314) 680-6470</p>
             </div>
-            <div>
-              <h3 className="text-xl font-medium text-gray-900 mb-2">Fraternity and Sorority Life Office Hours</h3>
+
+            <div className="bg-white rounded-xl shadow-md p-8 text-center">
+              <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-xl font-medium text-gray-900 mb-2">FSL Office Hours</h3>
               <p className="text-gray-600 leading-relaxed">
                 Monday - Friday: 9:00 AM - 4:00 PM<br />
                 Saturday - Sunday: Closed
               </p>
             </div>
-            <div>
-              <h3 className="text-xl font-medium text-gray-900 mb-2">Social Media</h3>
-              <div className="flex space-x-4 mt-2">
-                <a
-                  href="https://www.facebook.com/semolambdachi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                  className="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 rounded-full"
-                >
-                  <Facebook className="h-5 w-5 text-white" />
-                </a>
-                <a
-                  href="https://www.instagram.com/semolambdachi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                  className="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 rounded-full"
-                >
-                  <Instagram className="h-5 w-5 text-white" />
-                </a>
-              </div>
+          </div>
+
+          <div className="text-center">
+            <h3 className="text-xl font-medium text-gray-900 mb-4">Follow Us</h3>
+            <div className="flex justify-center space-x-4">
+              <a
+                href="https://www.facebook.com/semolambdachi"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 rounded-full"
+              >
+                <Facebook className="h-5 w-5 text-white" />
+              </a>
+              <a
+                href="https://www.instagram.com/semolambdachi"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 rounded-full"
+              >
+                <Instagram className="h-5 w-5 text-white" />
+              </a>
             </div>
           </div>
         </div>

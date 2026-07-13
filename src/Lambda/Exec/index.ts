@@ -9,6 +9,7 @@ import SecretaryImage from './Secretary.jpg';
 import TreasurerImage from './Treasurer.jpg';
 import RiskManagementImage from './Risk_Management.jpg';
 import EducatorImage from './Educator.jpg';
+import AlumniRelationsImage from './Alumni_Relations.jpg';
 
 export interface ExecMember {
   name: string;
@@ -70,7 +71,7 @@ export const executiveBoard: ExecMember[] = [
   {
     name: '',
     position: 'Alumni Relations',
-    image: '',
+    image: AlumniRelationsImage,
   },
   {
     name: '',
