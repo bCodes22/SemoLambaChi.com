@@ -65,20 +65,17 @@ const About = () => {
 
       {/* Values Section */}
       <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-light text-gray-900 mb-16">Our Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="text-left space-y-8">
-              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Loyalty</h3>
-              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Duty</h3>
-              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Respect</h3>
-            </div>
-            <div className="text-left space-y-8">
-              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Service & Stewardship</h3>
-              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Honor</h3>
-              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Integrity</h3>
-              <h3 className="text-2xl md:text-3xl font-medium text-gray-900">Personal Courage</h3>
-            </div>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-light text-gray-900 mb-8">Our Values</h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+            {["Loyalty", "Duty", "Respect", "Service & Stewardship", "Honor", "Integrity", "Personal Courage"].map((value) => (
+              <div key={value} className="text-center">
+                <h3 className="text-xl font-medium text-gray-900">{value}</h3>
+              </div>
+            ))}
           </div>
         </div>
       </section>
