@@ -4,6 +4,7 @@ import InstapostImage from '../Lambda/Instapost.jpg';
 import ChopsGivingImage from '../Lambda/ChopsGiving.jpg';
 import WatermelonBustImage from '../Lambda/WaterMelon.jpg'; 
 import WhyMattersLogo from '../Lambda/Why_Matters.png';
+import { ExternalLink } from 'lucide-react';
 
 const Philanthropy = () => {
   return (
@@ -82,14 +83,20 @@ const Philanthropy = () => {
                 href="https://www.southeastarrow.com/news/lambda-chi-alpha-chapter-honors-brothers-memory-1843919"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block relative overflow-hidden rounded-lg shadow-md group-hover:shadow-lg transition-all duration-300 mb-6"
+                className="group/image block relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 mb-6 cursor-pointer"
               >
                 <img
                   src={SpringPhiloImage}
                   alt="Scott Wood Classic Philanthropy Event"
-                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-80 object-cover group-hover/image:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent transition-opacity duration-300 group-hover/image:from-black/80"></div>
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 backdrop-blur-sm border border-white/30 shadow-lg">
+                  <span className="text-white text-sm font-medium tracking-wide whitespace-nowrap">
+                    Click the image to learn more
+                  </span>
+                  <ExternalLink className="w-4 h-4 text-white/90 group-hover/image:translate-x-0.5 group-hover/image:-translate-y-0.5 transition-transform duration-300" />
+                </div>
               </a>
               <h3 className="text-2xl font-light text-gray-900 mb-4">Scott Wood Classic</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
