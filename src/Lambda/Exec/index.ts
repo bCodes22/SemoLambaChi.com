@@ -1,14 +1,14 @@
-import PresidentImage from './President.jpeg';
-import InternalVPImage from './Internal_VP.jpeg';
-import ExternalVPImage from './External_VP.jpeg';
-import RushChairImage from './Rush_Chair.jpeg';
-import RitualistImage from './Ritualist.jpeg';
-import AcademicAffairsImage from './Academic_Affairs.jpeg';
-import SocialRelationsImage from './Social_Relations.jpeg';
-import SecretaryImage from './Secretary.jpeg';
-import TreasurerImage from './Treasurer.jpeg';
-import RiskManagementImage from './Risk_Management.jpeg';
-import EducatorImage from './Educator.jpeg';
+import PresidentImage from './President.jpg';
+import InternalVPImage from './Internal_VP.jpg';
+import ExternalVPImage from './External_VP.jpg';
+import RushChairImage from './Rush_Chair.jpg';
+import RitualistImage from './Ritualist.jpg';
+import AcademicAffairsImage from './Academic_Affairs.jpg';
+import SocialRelationsImage from './Social_Relations.jpg';
+import SecretaryImage from './Secretary.jpg';
+import TreasurerImage from './Treasurer.jpg';
+import RiskManagementImage from './Risk_Management.jpg';
+import EducatorImage from './Educator.jpg';
 
 export interface ExecMember {
   name: string;
