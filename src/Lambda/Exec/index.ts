@@ -5,6 +5,10 @@ import RecruitmentChairImage from './Recruitment_Chair.jpg';
 import RitualistImage from './Ritualist.jpg';
 import AcademicAffairsImage from './Academic_Affairs.jpg';
 import SocialRelationsImage from './Social_Relaitions.jpg';
+import SecretaryImage from './Secretary.jpeg';
+import TreasurerImage from './Treasurer.jpeg';
+import RiskManagementImage from './Risk_Management.jpeg';
+import EducatorImage from './Educator.jpeg';
 
 export interface ExecMember {
   name: string;
@@ -31,17 +35,17 @@ export const executiveBoard: ExecMember[] = [
   {
     name: '',
     position: 'Secretary',
-    image: '',
+    image: SecretaryImage,
   },
   {
     name: '',
     position: 'Treasurer',
-    image: '',
+    image: TreasurerImage,
   },
   {
     name: '',
     position: 'Risk Management',
-    image: '',
+    image: RiskManagementImage,
   },
   {
     name: '',
@@ -51,7 +55,7 @@ export const executiveBoard: ExecMember[] = [
   {
     name: '',
     position: 'Educator',
-    image: '',
+    image: EducatorImage,
   },
   {
     name: '',
