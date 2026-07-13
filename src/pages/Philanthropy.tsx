@@ -78,14 +78,19 @@ const Philanthropy = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="group">
-              <div className="relative overflow-hidden rounded-lg shadow-md group-hover:shadow-lg transition-all duration-300 mb-6">
+              <a
+                href="https://www.southeastarrow.com/news/lambda-chi-alpha-chapter-honors-brothers-memory-1843919"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block relative overflow-hidden rounded-lg shadow-md group-hover:shadow-lg transition-all duration-300 mb-6"
+              >
                 <img
                   src={SpringPhiloImage}
                   alt="Scott Wood Classic Philanthropy Event"
                   className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-              </div>
+              </a>
               <h3 className="text-2xl font-light text-gray-900 mb-4">Scott Wood Classic</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
               The Scott Wood Classic is our annual spring philanthropy week dedicated to raising awareness and 
