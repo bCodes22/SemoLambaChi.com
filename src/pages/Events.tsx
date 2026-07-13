@@ -1,7 +1,13 @@
 //eventpage data
+import { useState } from 'react';
 import BackgroundImage from '../Lambda/Background.jpg';
 
+// Add flyer images here once available, e.g.:
+// import FallRushFlyer from '../Lambda/FallRushFlyer.jpg';
+const flyers: { src: string; alt: string }[] = [];
+
 const Events = () => {
+  const [selectedFlyer, setSelectedFlyer] = useState<string | null>(null);
 
   return (
     <div className="flex flex-col">
