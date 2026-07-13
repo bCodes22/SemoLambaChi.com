@@ -1,7 +1,39 @@
+import { useState } from 'react';
 import BackgroundImage from '../Lambda/Background.jpg';
 import { Facebook, Instagram } from 'lucide-react';
 
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mzdnbyjk';
+
 const Contact = () => {
+  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('submitting');
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(e.currentTarget),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
+  };
+
   return (
     <div className="flex flex-col">
       {/* Hero Section with Background Image */}
@@ -35,41 +67,64 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
               <h2 className="text-3xl font-light text-gray-900 mb-8">Send Us a Message</h2>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <input
                     type="text"
+                    name="name"
                     placeholder="Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
                     className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-gray-900 bg-transparent"
                   />
                 </div>
                 <div>
                   <input
                     type="email"
+                    name="email"
                     placeholder="Email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                     className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-gray-900 bg-transparent"
                   />
                 </div>
                 <div>
                   <input
                     type="text"
+                    name="subject"
                     placeholder="Subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
                     className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-gray-900 bg-transparent"
                   />
                 </div>
                 <div>
                   <textarea
+                    name="message"
                     rows={6}
                     placeholder="Message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
                     className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-gray-900 bg-transparent resize-none"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-gray-900 text-white py-3 hover:bg-gray-800 transition-colors duration-300"
+                  disabled={status === 'submitting'}
+                  className="w-full bg-gray-900 text-white py-3 hover:bg-gray-800 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {status === 'submitting' ? 'Sending...' : 'Send Message'}
                 </button>
+                {status === 'success' && (
+                  <p className="text-green-600 text-sm">Thanks! Your message has been sent.</p>
+                )}
+                {status === 'error' && (
+                  <p className="text-red-600 text-sm">Something went wrong. Please try again or email us directly.</p>
+                )}
               </form>
             </div>
 
@@ -85,7 +140,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-medium text-gray-900 mb-2">Email</h3>
-                  <p className="text-gray-600">lambdachideltaphi@gmail.com</p>
+                  <p className="text-gray-600">lambdachirushchair@gmail.com</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-medium text-gray-900 mb-2">Phone</h3>
