@@ -44,9 +44,9 @@ const Contact = () => {
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-light text-gray-900 mb-8">Contact</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-8">Contact Us</h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Have a specific question? Reach out directly to one of our Exec.
+              Have a specific question? Reach out to us directly.
             </p>
           </div>
 
