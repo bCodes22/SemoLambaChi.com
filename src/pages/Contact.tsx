@@ -1,8 +1,19 @@
 import { useState } from 'react';
 import BackgroundImage from '../Lambda/Background.jpg';
-import { Facebook, Instagram } from 'lucide-react';
+import PresidentImage from '../Lambda/Exec/President.jpg';
+import TreasurerImage from '../Lambda/Exec/Treasurer.jpg';
+import InternalVPImage from '../Lambda/Exec/Internal_VP.jpg';
+import RushChairImage from '../Lambda/Exec/Rush_Chair.jpg';
+import { Facebook, Instagram, Mail } from 'lucide-react';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mzdnbyjk';
+
+const officers = [
+  { name: 'Grant Hoffman', position: 'President', email: 'gchoffman2s@semo.edu', image: PresidentImage },
+  { name: 'Zavior Mize', position: 'VP of Internal Affairs', email: 'ezmize1s@semo.edu', image: InternalVPImage },
+  { name: 'Lucas Lenear', position: 'Treasurer', email: 'lwlenear1s@semo.edu', image: TreasurerImage },
+  { name: 'Jacob Leonard', position: 'Rush Chair', email: 'jwleaonard2s@semo.edu', image: RushChairImage },
+];
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
@@ -58,6 +69,41 @@ const Contact = () => {
             Get in touch with Lambda Chi Alpha at Southeast Missouri State University. 
             We're here to answer your questions and help you learn more about our brotherhood.
           </p>
+        </div>
+      </section>
+
+      {/* Contact an Officer */}
+      <section className="py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-light text-gray-900 mb-8">Contact an Officer</h2>
+            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              Have a specific question? Reach out directly to one of our officers.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {officers.map((officer) => (
+              <div key={officer.email} className="text-center group">
+                <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 mb-4 mx-auto w-40 h-40">
+                  <img
+                    src={officer.image}
+                    alt={officer.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-lg font-medium text-gray-900">{officer.name}</h3>
+                <p className="text-gray-600 text-sm mb-3">{officer.position}</p>
+                <a
+                  href={`mailto:${officer.email}`}
+                  aria-label={`Email ${officer.name}`}
+                  className="inline-flex items-center justify-center w-8 h-8 rounded-full text-gray-500 hover:text-white hover:bg-gray-900 transition-colors duration-300"
+                >
+                  <Mail className="w-4 h-4" />
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
