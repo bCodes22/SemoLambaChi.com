@@ -1,6 +1,7 @@
 import HarryS from '../Lambda/HarryS.jpg';
 import BackgroundImage from '../Lambda/Background.jpg';
 import LifeBrotherImage from '../Lambda/Life_Brother.jpg';
+import { Facebook } from 'lucide-react';
 
 const Alumni = () => {
   return (
@@ -132,36 +133,20 @@ const Alumni = () => {
               </div>
             </div>
             <div>
-              <h3 className="text-2xl font-light text-gray-900 mb-6">Update Your Information</h3>
-              <form className="space-y-6">
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-gray-900 bg-transparent"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-gray-900 bg-transparent"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Current Position"
-                    className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-gray-900 bg-transparent"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-gray-900 text-white py-3 hover:bg-gray-800 transition-colors duration-300"
-                >
-                  Stay Connected
-                </button>
-              </form>
+              <h3 className="text-2xl font-light text-gray-900 mb-6">Join Our Alumni Group</h3>
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Connect with fellow alumni, catch up on chapter news, and stay in the loop
+                on upcoming events by joining our Facebook group.
+              </p>
+              <a
+                href="https://www.facebook.com/groups/2487145961"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full flex items-center justify-center gap-3 bg-gray-900 text-white py-3 hover:bg-gray-800 transition-colors duration-300"
+              >
+                <Facebook className="w-5 h-5" />
+                Join the Facebook Group
+              </a>
             </div>
           </div>
         </div>
