@@ -19,17 +19,17 @@ export interface ExecMember {
 
 export const executiveBoard: ExecMember[] = [
   {
-    name: '',
+    name: 'Grant Hoffman',
     position: 'President',
     image: PresidentImage,
   },
   {
-    name: '',
+    name: 'Zavior Mize',
     position: 'VP of Internal Affairs',
     image: InternalVPImage,
   },
   {
-    name: '',
+    name: 'Zachary Renfroe',
     position: 'VP of External Affairs',
     image: ExternalVPImage,
   },
@@ -39,42 +39,42 @@ export const executiveBoard: ExecMember[] = [
     image: SecretaryImage,
   },
   {
-    name: '',
+    name: 'Lucas Lenear',
     position: 'Treasurer',
     image: TreasurerImage,
   },
   {
-    name: '',
+    name: 'Evan Hoffman',
     position: 'Risk Management',
     image: RiskManagementImage,
   },
   {
-    name: '',
+    name: 'Jacob Leonard',
     position: 'Recruitment Chair',
     image: RushChairImage,
   },
   {
-    name: '',
+    name: 'Tyler Harris',
     position: 'Educator',
     image: EducatorImage,
   },
   {
-    name: '',
+    name: 'James Antoni',
     position: 'Ritualist',
     image: RitualistImage,
   },
   {
-    name: '',
+    name: 'Mateo Albers',
     position: 'Academic Affairs',
     image: AcademicAffairsImage,
   },
   {
-    name: '',
+    name: 'Cullen Humes',
     position: 'Alumni Relations',
     image: AlumniRelationsImage,
   },
   {
-    name: '',
+    name: 'Andrew Keane',
     position: 'Social Relations',
     image: SocialRelationsImage,
   },

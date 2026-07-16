@@ -3,6 +3,7 @@ import MeansImage from '../Lambda/Means.jpg';
 import CommunityServiceImage from '../Lambda/CommunityService.jpg';
 import BrotherhoodEventImage from '../Lambda/Brotherhoodevent.jpg';
 import BackgroundImage from '../Lambda/Background.jpg';
+import SocialRelationsImage from '../Lambda/Exec/Social_Relations.jpg';
 
 //Brotherhood page
 const Brotherhood = () => {
@@ -114,11 +115,11 @@ const Brotherhood = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               {
-                name: "",
-                year: "",
-                major: "",
-                image: "",
-                quote: ""
+                name: "Andrew Keane",
+                year: "Senior",
+                major: "Communications",
+                image: SocialRelationsImage,
+                quote: "Lambda Chi has given me a lifelong brotherhood that immediately felt like family, but more importantly, it gave me a space to grow. The constant accountability and encouragement from my brothers have shaped me into a more grounded, driven person."
               },
               {
                 name: " ",
@@ -137,13 +138,21 @@ const Brotherhood = () => {
             ].map((brother, index) => (
               <div key={index} className="text-center group">
                 <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 mb-6 mx-auto w-64 h-64">
-                  <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="text-6xl mb-4">👥</div>
-                      <p className="text-gray-600 font-medium">Brother Spotlight</p>
-                      <p className="text-gray-500 text-sm">Coming Soon</p>
+                  {brother.image ? (
+                    <img
+                      src={brother.image}
+                      alt={brother.name || "Brother Spotlight"}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="text-6xl mb-4">👥</div>
+                        <p className="text-gray-600 font-medium">Brother Spotlight</p>
+                        <p className="text-gray-500 text-sm">Coming Soon</p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 mb-2">{brother.name || "Brother Spotlight"}</h3>
                 <p className="text-gray-600 mb-4">{brother.year || "Year"} - {brother.major || "Major"}</p>
