@@ -29,7 +29,7 @@ const Home = () => {
             Lambda Chi Alpha
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-4 font-light drop-shadow-md">
-            Delta-Phi Zeta Chapter
+            Delta-Phi Chapter
           </p>
           <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
             Southeast Missouri State University

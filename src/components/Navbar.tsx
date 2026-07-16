@@ -56,7 +56,7 @@ const Navbar = () => {
                 <div className={`text-sm transition-all duration-300 ${
                   scrolled ? 'text-gray-600' : 'text-gray-200'
                 }`}>
-                  Delta-Phi Zeta Chapter
+                  Delta-Phi Chapter
                 </div>
               </div>
             </Link>

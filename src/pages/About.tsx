@@ -25,7 +25,7 @@ const About = () => {
             About Our Chapter
           </h1>
           <p className="text-xl text-white/90 leading-relaxed max-w-3xl mx-auto drop-shadow-md">
-            The Delta-Phi Zeta Chapter of Lambda Chi Alpha has been fostering brotherhood, 
+            The Delta-Phi Chapter of Lambda Chi Alpha has been fostering brotherhood,
             leadership, and academic excellence at Southeast Missouri State University since 1991.
           </p>
         </div>
@@ -97,7 +97,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-light text-gray-900 mb-8">Our History</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                Founded in 1991, the Delta-Phi Zeta Chapter has been a cornerstone of Greek life 
+                Founded in 1991, the Delta-Phi Chapter has been a cornerstone of Greek life
                 at Southeast Missouri State University for over three decades. Our chapter has 
                 consistently been recognized for excellence in academics, philanthropy, and 
                 campus involvement and also setting records.

@@ -17,7 +17,7 @@ const Footer = () => {
               />
               <div className="ml-3">
                 <span className="text-xl font-light">Lambda Chi Alpha</span>
-                <div className="text-gray-300">Delta-Phi Zeta Chapter</div>
+                <div className="text-gray-300">Delta-Phi Chapter</div>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed">
@@ -78,7 +78,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} Lambda Chi Alpha - Delta-Phi Zeta Chapter. All rights reserved.
+            &copy; {new Date().getFullYear()} Lambda Chi Alpha - Delta-Phi Chapter. All rights reserved.
           </p>
         </div>
       </div>
