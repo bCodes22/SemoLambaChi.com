@@ -1,0 +1,64 @@
+{
+  "members": [
+    {
+      "name": "Grant Hoffman",
+      "position": "President",
+      "image": "/images/uploads/President.jpg"
+    },
+    {
+      "name": "Zavior Mize",
+      "position": "VP of Internal Affairs",
+      "image": "/images/uploads/Internal_VP.jpg"
+    },
+    {
+      "name": "Zachary Renfroe",
+      "position": "VP of External Affairs",
+      "image": "/images/uploads/External_VP.jpg"
+    },
+    {
+      "name": "",
+      "position": "Secretary",
+      "image": "/images/uploads/Secretary.jpg"
+    },
+    {
+      "name": "Lucas Lenear",
+      "position": "Treasurer",
+      "image": "/images/uploads/Treasurer.jpg"
+    },
+    {
+      "name": "Evan Hoffman",
+      "position": "Risk Management",
+      "image": "/images/uploads/Risk_Management.jpg"
+    },
+    {
+      "name": "Jacob Leonard",
+      "position": "Recruitment Chair",
+      "image": "/images/uploads/Rush_Chair.jpg"
+    },
+    {
+      "name": "Tyler Harris",
+      "position": "Educator",
+      "image": "/images/uploads/Educator.jpg"
+    },
+    {
+      "name": "James Antoni",
+      "position": "Ritualist",
+      "image": "/images/uploads/Ritualist.jpg"
+    },
+    {
+      "name": "Mateo Albers",
+      "position": "Academic Affairs",
+      "image": "/images/uploads/Academic_Affairs.jpg"
+    },
+    {
+      "name": "Cullen Humes",
+      "position": "Alumni Relations",
+      "image": "/images/uploads/Alumni_Relations.jpg"
+    },
+    {
+      "name": "Andrew Keane",
+      "position": "Social Relations",
+      "image": "/images/uploads/Social_Relations.jpg"
+    }
+  ]
+}

@@ -1,7 +1,9 @@
-import HarryS from '../Lambda/HarryS.jpg';
 import BackgroundImage from '../Lambda/Background.jpg';
 import LifeBrotherImage from '../Lambda/Life_Brother.jpg';
 import { Facebook } from 'lucide-react';
+import alumniSpotlightsData from '../content/alumniSpotlights.json';
+
+const { spotlights: alumniSpotlights } = alumniSpotlightsData;
 
 const Alumni = () => {
   return (
@@ -72,15 +74,7 @@ const Alumni = () => {
           </div>
           
           <div className="flex flex-wrap justify-center gap-12">
-            {[
-              {
-                name: "Harry S. Truman",
-                year: "1945",
-                position: "33rd President of the United States",
-                image: HarryS,
-                quote: "Harry S. Truman was an honorary member of Lambda Chi Alpha, initiated in June 1945 by the Kansas City alumni association of the University of Missouri's chapter. At the time, he was the President of the United States"
-              }
-            ].map((alumni) => (
+            {alumniSpotlights.map((alumni) => (
               <div key={alumni.name} className="text-center group w-full max-w-xs">
                 <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 mb-6 mx-auto w-64 h-64">
                   <img

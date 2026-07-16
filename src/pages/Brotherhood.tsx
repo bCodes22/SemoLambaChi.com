@@ -3,7 +3,9 @@ import MeansImage from '../Lambda/Means.jpg';
 import CommunityServiceImage from '../Lambda/CommunityService.jpg';
 import BrotherhoodEventImage from '../Lambda/Brotherhoodevent.jpg';
 import BackgroundImage from '../Lambda/Background.jpg';
-import SocialRelationsImage from '../Lambda/Exec/Social_Relations.jpg';
+import brotherhoodSpotlightsData from '../content/brotherhoodSpotlights.json';
+
+const { spotlights: brotherhoodSpotlights } = brotherhoodSpotlightsData;
 
 //Brotherhood page
 const Brotherhood = () => {
@@ -112,31 +114,9 @@ const Brotherhood = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {[
-              {
-                name: "Andrew Keane",
-                year: "Senior",
-                major: "Communications",
-                image: SocialRelationsImage,
-                quote: "Lambda Chi has given me a lifelong brotherhood that immediately felt like family, but more importantly, it gave me a space to grow. The constant accountability and encouragement from my brothers have shaped me into a more grounded, driven person."
-              },
-              {
-                name: " ",
-                year: "",
-                major: "",
-                image: "",
-                quote: ""
-              },
-              {
-                name: "",
-                year: "",
-                major: "",
-                image: "",
-                quote: ""
-              }
-            ].map((brother, index) => (
-              <div key={index} className="text-center group">
+          <div className="flex flex-wrap justify-center gap-12">
+            {brotherhoodSpotlights.map((brother, index) => (
+              <div key={index} className="text-center group w-full max-w-xs">
                 <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 mb-6 mx-auto w-64 h-64">
                   {brother.image ? (
                     <img

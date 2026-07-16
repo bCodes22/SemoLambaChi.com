@@ -1,15 +1,11 @@
 import BackgroundImage from '../Lambda/Background.jpg';
-import PresidentImage from '../Lambda/Exec/President.jpg';
-import TreasurerImage from '../Lambda/Exec/Treasurer.jpg';
-import InternalVPImage from '../Lambda/Exec/Internal_VP.jpg';
-import RushChairImage from '../Lambda/Exec/Rush_Chair.jpg';
 import { Facebook, Instagram, Mail, MapPin, Phone, Clock } from 'lucide-react';
 
 const officers = [
-  { name: 'Grant Hoffman', position: 'President', email: 'gchoffman2s@semo.edu', image: PresidentImage },
-  { name: 'Zavior Mize', position: 'VP of Internal Affairs', email: 'ezmize1s@semo.edu', image: InternalVPImage },
-  { name: 'Lucas Lenear', position: 'Treasurer', email: 'lwlenear1s@semo.edu', image: TreasurerImage },
-  { name: 'Jacob Leonard', position: 'Rush Chair', email: 'jwleaonard2s@semo.edu', image: RushChairImage },
+  { name: 'Grant Hoffman', position: 'President', email: 'gchoffman2s@semo.edu', image: '/images/uploads/President.jpg' },
+  { name: 'Zavior Mize', position: 'VP of Internal Affairs', email: 'ezmize1s@semo.edu', image: '/images/uploads/Internal_VP.jpg' },
+  { name: 'Lucas Lenear', position: 'Treasurer', email: 'lwlenear1s@semo.edu', image: '/images/uploads/Treasurer.jpg' },
+  { name: 'Jacob Leonard', position: 'Rush Chair', email: 'jwleaonard2s@semo.edu', image: '/images/uploads/Rush_Chair.jpg' },
 ];
 
 const Contact = () => {

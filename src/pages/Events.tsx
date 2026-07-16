@@ -1,10 +1,11 @@
 //eventpage data
 import { useState } from 'react';
 import BackgroundImage from '../Lambda/Background.jpg';
+import eventsData from '../content/events.json';
+import flyersData from '../content/flyers.json';
 
-// Add flyer images here once available, e.g.:
-// import FallRushFlyer from '../Lambda/FallRushFlyer.jpg';
-const flyers: { src: string; alt: string }[] = [];
+const { events } = eventsData;
+const { flyers } = flyersData;
 
 const Events = () => {
   const [selectedFlyer, setSelectedFlyer] = useState<string | null>(null);
@@ -39,12 +40,29 @@ const Events = () => {
       {/* Upcoming Events */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center">
+          <div className="text-center mb-16">
             <h2 className="text-3xl font-light text-gray-900 mb-8">Upcoming Events</h2>
-            <div className="bg-white p-16 border-l-4 border-gray-900">
-              <p className="text-2xl text-gray-600">Coming Soon</p>
-            </div>
           </div>
+
+          {events.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {events.map((event) => (
+                <div key={event.title} className="bg-white p-8 border-l-4 border-gray-900 text-left">
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">{event.title}</h3>
+                  {event.date && <p className="text-gray-500 mb-2">{event.date}</p>}
+                  {event.description && (
+                    <p className="text-gray-600 leading-relaxed">{event.description}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center">
+              <div className="bg-white p-16 border-l-4 border-gray-900">
+                <p className="text-2xl text-gray-600">Coming Soon</p>
+              </div>
+            </div>
+          )}
         </div>
       </section>
 

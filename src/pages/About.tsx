@@ -1,7 +1,9 @@
 import BackgroundImage from '../Lambda/Background.jpg';
 import LXACOA from '../Lambda/LXACOA.svg';
 import HistoryImage from '../Lambda/History.jpeg';
-import { executiveBoard } from '../Lambda/Exec';
+import leadershipData from '../content/leadership.json';
+
+const { members: executiveBoard } = leadershipData;
 
 const About = () => {
   return (
