@@ -34,6 +34,7 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Date", name: "date", widget: "string", required: false, hint: "e.g. September 20, 2026" }
+              - { label: "Location", name: "location", widget: "string", required: false }
               - { label: "Description", name: "description", widget: "text", required: false }
 
   - name: "flyers"
