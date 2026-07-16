@@ -16,39 +16,9 @@
       "image": "/images/uploads/External_VP.jpg"
     },
     {
-      "name": "",
-      "position": "Secretary",
-      "image": "/images/uploads/Secretary.jpg"
-    },
-    {
       "name": "Lucas Lenear",
       "position": "Treasurer",
       "image": "/images/uploads/Treasurer.jpg"
-    },
-    {
-      "name": "Evan Hoffman",
-      "position": "Risk Management",
-      "image": "/images/uploads/Risk_Management.jpg"
-    },
-    {
-      "name": "Jacob Leonard",
-      "position": "Recruitment Chair",
-      "image": "/images/uploads/Rush_Chair.jpg"
-    },
-    {
-      "name": "Tyler Harris",
-      "position": "Educator",
-      "image": "/images/uploads/Educator.jpg"
-    },
-    {
-      "name": "James Antoni",
-      "position": "Ritualist",
-      "image": "/images/uploads/Ritualist.jpg"
-    },
-    {
-      "name": "Mateo Albers",
-      "position": "Academic Affairs",
-      "image": "/images/uploads/Academic_Affairs.jpg"
     },
     {
       "name": "Cullen Humes",
@@ -56,9 +26,39 @@
       "image": "/images/uploads/Alumni_Relations.jpg"
     },
     {
+      "name": "Drew Tarble",
+      "position": "Secretary",
+      "image": "/images/uploads/Secretary.jpg"
+    },
+    {
+      "name": "Jacob Leonard",
+      "position": "Recruitment Chair",
+      "image": "/images/uploads/Rush_Chair.jpg"
+    },
+    {
       "name": "Andrew Keane",
       "position": "Social Relations",
       "image": "/images/uploads/Social_Relations.jpg"
+    },
+    {
+      "name": "James Antoni",
+      "position": "Ritualist",
+      "image": "/images/uploads/Ritualist.jpg"
+    },
+    {
+      "name": "Tyler Harris",
+      "position": "Educator",
+      "image": "/images/uploads/Educator.jpg"
+    },
+    {
+      "name": "Mateo Albers",
+      "position": "Academic Affairs",
+      "image": "/images/uploads/Academic_Affairs.jpg"
+    },
+    {
+      "name": "Evan Hoffman",
+      "position": "Risk Management",
+      "image": "/images/uploads/Risk_Management.jpg"
     }
   ]
 }
