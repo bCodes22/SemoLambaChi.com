@@ -4,7 +4,15 @@ import BackgroundImage from '../Lambda/Background.jpg';
 import eventsData from '../content/events.json';
 import flyersData from '../content/flyers.json';
 
-const { events } = eventsData;
+interface EventItem {
+  title: string;
+  date?: string;
+  time?: string;
+  location?: string;
+  description?: string;
+}
+
+const events = eventsData.events as EventItem[];
 const { flyers } = flyersData;
 
 const Events = () => {
@@ -47,10 +55,16 @@ const Events = () => {
           {events.length > 0 ? (
             <div className="flex flex-wrap justify-center gap-8">
               {events.map((event) => (
-                <div key={event.title} className="bg-white p-10 border-l-4 border-gray-900 text-left w-full max-w-2xl">
-                  <h3 className="text-xl font-medium text-gray-900 mb-2">{event.title}</h3>
-                  {event.date && <p className="text-gray-500 mb-1">{event.date}</p>}
-                  {event.location && <p className="text-gray-500 mb-2">{event.location}</p>}
+                <div key={event.title} className="bg-white p-10 border-l-4 border-gray-900 text-center w-full max-w-3xl">
+                  <h3 className="text-2xl font-medium text-gray-900 mb-3">{event.title}</h3>
+                  {(event.date || event.time) && (
+                    <p className="text-gray-500 mb-1">
+                      {event.date}
+                      {event.date && event.time && ' • '}
+                      {event.time}
+                    </p>
+                  )}
+                  {event.location && <p className="text-gray-500 mb-4">{event.location}</p>}
                   {event.description && (
                     <p className="text-gray-600 leading-relaxed">{event.description}</p>
                   )}
