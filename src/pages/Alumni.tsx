@@ -71,7 +71,7 @@ const Alumni = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="flex flex-wrap justify-center gap-12">
             {[
               {
                 name: "Harry S. Truman",
@@ -81,7 +81,7 @@ const Alumni = () => {
                 quote: "Harry S. Truman was an honorary member of Lambda Chi Alpha, initiated in June 1945 by the Kansas City alumni association of the University of Missouri's chapter. At the time, he was the President of the United States"
               }
             ].map((alumni) => (
-              <div key={alumni.name} className="text-center group">
+              <div key={alumni.name} className="text-center group w-full max-w-xs">
                 <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 mb-6 mx-auto w-64 h-64">
                   <img
                     src={alumni.image}
