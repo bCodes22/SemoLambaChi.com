@@ -181,9 +181,9 @@ const Philanthropy = () => {
               </a>
               <h3 className="text-2xl font-light text-gray-900 mb-4">Watermelon Bust</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-              For many years, our chapter hosted the Watermelon Bust and Watermelon Bash as our main fall fundraising events. 
-              These fun, community-centered traditions helped raise thousands of dollars for Feeding America, supporting families in need and helping fight hunger nationwide. 
-              Through these events, we saw how brotherhood and campus spirit could come together to make a real impact.
+              Each fall, our chapter hosts the Watermelon Bust as one of our main fundraising events.
+            For many years, our chapter has hosted Watermelon Bust as our main fall fundraising event. This fun, community-centered tradition has grown into something that truly means a lot to us. Together with the campus community, we've raised thousands of dollars for Movember and men's mental health, a cause that hits close to home for many of our brothers. It's one of those events that reminds us why brotherhood matters and 
+            how much we can accomplish when we show up for each other and for something bigger than ourselves.
               </p>
             </div>
             <div className="group">
