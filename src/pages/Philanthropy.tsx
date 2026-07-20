@@ -161,7 +161,7 @@ const Philanthropy = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="group">
               <a
-                href="https://www.instagram.com/p/DORqu0xEkcw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                href="https://us.movember.com/mospace/network/view/id/51128"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group/image block relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 mb-6 cursor-pointer"
@@ -174,15 +174,14 @@ const Philanthropy = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent transition-opacity duration-300 group-hover/image:from-black/80"></div>
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 backdrop-blur-sm border border-white/30 shadow-lg">
                   <span className="text-white text-sm font-medium tracking-wide whitespace-nowrap">
-                    View recent photos on Instagram
+                    Movember Foundation
                   </span>
                   <ExternalLink className="w-4 h-4 text-white/90 group-hover/image:translate-x-0.5 group-hover/image:-translate-y-0.5 transition-transform duration-300" />
                 </div>
               </a>
               <h3 className="text-2xl font-light text-gray-900 mb-4">Watermelon Bust</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-              Each fall, our chapter hosts the Watermelon Bust as one of our main fundraising events.
-            For many years, our chapter has hosted Watermelon Bust as our main fall fundraising event. This fun, community-centered tradition has grown into something that truly means a lot to us. Together with the campus community, we've raised thousands of dollars for Movember and men's mental health, a cause that hits close to home for many of our brothers. It's one of those events that reminds us why brotherhood matters and 
+            For many years, our chapter has hosted Watermelon Bust as our main fall fundraising event. This fun, community-centered tradition has grown into something that truly means a lot to us. Together with the campus community, we've raised thousands of dollars for Movember and men's mental health, a cause that hits close to home for many of our brothers. It's one of those events that reminds us why brotherhood matters and
             how much we can accomplish when we show up for each other and for something bigger than ourselves.
               </p>
             </div>
